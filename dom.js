@@ -1,4 +1,4 @@
-//deleting the books
+//deleting the oclass
 const list = document.querySelector('#oclass-list ul');
 list.addEventListener('click', (event)=>{
 if(event.target.className == 'delete'){
@@ -7,7 +7,7 @@ if(event.target.className == 'delete'){
 }
 })
 
-//add book
+//add oclass
 const addForm = document.forms['add-oclass'];
 
 addForm.addEventListener('submit', (event)=>{
@@ -41,7 +41,7 @@ list.appendChild(li);
 })
 
 
-// hide books
+// hide classes
 const hideBox = document.querySelector('#hide');
 
 hideBox.addEventListener('change',event =>{
