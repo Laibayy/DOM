@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Online Classes</h1>
+                <p class="on">An online class is a course conducted over the Internet...</p>
+                <form id="search-oclass">
+                    <input type="text" placeholder="Search Class">
+                </form>
+            </div>
+        </header>
+        <div id="oclass-list">
+            <h2 class="title">Online Classes..</h2>
+            <ul>
+                <li>
+                    <span class="name">Yoga Class - 8:00 AM</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Computer Class - 9:00 AM</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Chemistry Class - 11:00 AM</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Physics Class - 1:00 PM</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="name">English Class - 3:00 PM</span>
+                    <span class="delete">Delete</span>
+                </li>
+                <li>
+                    <span class="name">Math Class - 4:00 PM</span>
+                    <span class="delete">Delete</span>
+                </li>
+            </ul>
+        </div>
+
+        <form id="add-oclass">
+            <input type="checkbox" id="hide">
+            <label for="hide">Hide all classes</label>
+            <input type="text" placeholder="Add a Book...">
+            <button>Add</button>
+        </form>
+        <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#about">About</li>
+              <li data-target="#contact">Contact</li>
+              <li data-target="#support">Support</li>
+            </ul>
+            <div class="panel" id="about">
+              <p>Content for about tab...</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti magni aspernatur cupiditate quibusdam commodi ullam. Rerum at officiis dolorum sequi? Ullam incidunt cumque vel ut exercitationem quasi quam quo?</p>
+            </div>
+            <div class="panel" id="contact">
+              <p>Content for contact tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+            </div>
+            <div class="panel" id="support">
+                <p>Content for support tab...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus assumenda architecto libero, ut quo ratione sapiente nobis dolorum quidem tenetur amet alias, corrupti consequuntur impedit facilis odio asperiores blanditiis?</p>
+              </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="dom.js"></script>
+</body>
+</html>

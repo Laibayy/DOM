@@ -1,0 +1,181 @@
+body{
+    color: rgb(129, 47, 47);
+    letter-spacing: 1px;
+}
+
+
+h1, h2{
+    font-weight: normal;
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgb(99, 75, 75);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+#page-banner{
+    background: rgb(71, 49, 49) ;
+    padding: 10px 0;
+    color:white;
+    font-size: 30px;
+}
+
+#page-banner h1,{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #444;
+}
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+.on{
+    font-size: 16px;
+    text-align: center;
+}
+#oclass-list, #add-oclass, #tabbed-content{
+    margin: 30px;
+    font-size: 24px;
+}
+#wrapper{
+    background:rgb(155, 142, 142);
+}
+#oclass-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#oclass-list li{
+    padding: 20px;
+    border-left: 5px solid rgb(117, 90, 90);
+    margin: 20px 10px;
+}
+
+#oclass-list li:hover{
+    border-color: rgb(133, 40, 40);
+}
+
+.delete{
+    float: right;
+    background: rgb(109, 90, 90);
+    padding: 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete:hover{
+    background: rgb(83, 53, 53);
+}
+
+#add-oclass{
+    width: 400px;
+    margin: 0 auto;
+}
+
+#add-oclass input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid rgb(163, 105, 105);
+    font-size: 20px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+}
+
+#add-oclass button{
+    border: 1px solid rgb(68, 32, 32);
+    background: rgb(109, 90, 90);
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 70px;
+    float: left;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-oclass:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#add-oclass #hide{
+    width:30px
+}
+#add-oclass label{
+    line-height: 52px;
+}
+
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 25px;
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}
+
+*{font-family:'k8x12';}
+#tabbed-content .tabs li{
+    background: white;
+     border: 1px solid rgb(87, 58, 58);
+}
+#tabbed-content .tabs li:hover{
+    background: rgb(87, 59, 59);
+    color: white;
+}
+li.active::after{
+    content:'';
+    display: block;
+    position: relative;
+    background: white;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    animation: rotation 1s infinite;
+    border: 1px solid rgb(94, 57, 57);
+}
+@keyframes rotation {
+    from{rotate: 0deg;}
+    to{rotate:360deg}
+}
